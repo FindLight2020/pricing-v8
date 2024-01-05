@@ -1,0 +1,518 @@
+.passport {
+	display: flex;
+	flex-direction: row;
+	/*background-color: lightblue;*/
+	margin-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 680px;
+	height: 680px;
+	box-shadow: 0 0 5px 5px rgba(100,100,100,0.15);
+}
+
+@media (max-width: 600px) {
+	.passport {
+		display: flex;
+		flex-direction: column;
+		height: auto;
+		max-width: 340px;
+	}
+}
+
+.checkout-footer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: rgb(240,240,240);
+	border-top: solid 1px rgb(210,210,210);
+	position: relative;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	min-height: 60px;
+	max-height: 100%;
+	padding-top: 12px;
+	margin-top: 24px;
+}
+
+
+.footer-text {
+	font-family: Roboto, Arial;
+	font-size: 14px;
+	line-height: 1.4;
+	margin-bottom: 4px;
+}
+
+
+.plan-selection {
+	position: relative;
+	background-color: rgb(247,249,252);
+	width: 340px;
+	height: 648px;
+	/*box-shadow: 0 0 5px 5px rgba(100,100,100,0.15);*/
+	border-top: solid 8px rgb(247,212,68);
+	color: black;
+	padding-bottom: 24px;
+}
+
+@media (max-width: 600px) {
+	.plan-selection {
+		height: auto;
+	}
+}
+
+
+.plan-choice {
+	margin-left: 32px;
+	height: 90px;
+	width: 280px;
+	border-bottom: solid 1px rgb(179,179,179);
+}
+
+.plan-price {
+	margin-left: 32px;
+	height: 120px;
+	width: 191px;
+}
+
+.plan-name {
+	font-family: Roboto, Arial;
+	font-size: 32px;
+	margin-top: 32px;
+	margin-bottom: 7px;
+	font-weight: 600;
+}
+
+.plan-price {
+	font-family: Roboto, Arial;
+	font-size: 15px;
+	margin: 0;
+	color: rgb(4,92,153);
+}
+
+.see-details {
+	margin-left: 32px;
+	font-family: Roboto, Arial;
+	text-decoration: none;
+	font-size: 15px;
+	line-height: 32px;
+	margin-bottom: 24px;
+	color: rgb(4,92,153);
+}
+
+@media (min-width: 601px) {
+	.see-details {
+		display: none;
+	}
+}
+
+.hide-details {
+	margin-left: 0;
+	font-family: Roboto, Arial;
+	text-decoration: none;
+	font-size: 15px;
+	color: rgb(4,92,153);
+	line-height: 32px;
+	white-space: nowrap;
+}
+
+
+@media (min-width: 601px) {
+	.hide-details {
+		display: none;
+	}
+}
+
+.plan-items {
+	display: flex;
+	flex-direction: column;	
+	margin-top: 12px;
+	margin-left: 32px;
+	margin-bottom: 0px;
+	max-width: 280px;
+
+}
+
+
+@media (max-width: 600px) {
+	.plan-items {
+		display: none;
+	}
+}
+
+.plan-selected-mobile {
+	font-family: Roboto, Arial;
+	font-size: 16px;
+	padding-top: 8px;
+	padding-right: 14px; 
+	position: absolute;
+	right: 0px;
+	color: rgb(200,200,200);
+}
+
+@media(min-width: 601px) {
+	.plan-selected-mobile {
+		display: none;
+	}
+}
+
+.plan-selected {
+	display: flex;
+	flex-direction: row;
+	position: absolute;
+	justify-content: center;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin-left: 32px;
+	margin-right: 32px;
+	margin-bottom: 16px;
+	margin-top: 12px;
+}
+
+@media(max-width: 600px) {
+	.plan-selected {
+		display: none;
+	}
+}
+
+.plan-selected-text {
+	display: block;
+	font-family: Roboto, Arial;
+	font-size: 13px;
+	font-weight: 600px;
+	color: rgb(165,165,165);
+	width: auto;
+	margin-left: 11px;
+	margin-right: 8px;
+	align-content: center;
+	white-space: nowrap;
+}
+
+.h-line {
+	width: 100%;
+	border-bottom: solid 1px rgb(179,179,179);
+	margin-bottom: 19px;
+}
+
+.tooltip {
+	position: relative;
+ 	display: inline-block;
+  	border-bottom: 1px dotted lightblue;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  max-width: 260px;
+  background-color: rgb(0,16,51);
+  color: white;
+  border-radius: 4px;
+  font-family: Roboto, Arial;
+  font-size: 13px;
+  line-height: 1.4;
+  text-align: center;
+  padding: 8px 8px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 60px;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -8px;
+  border-width: 8px;
+  border-style: solid;
+  border-color: rgb(0,16,51) transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 0.9;
+  transition: opacity 0.5s;
+}
+
+.form-container {
+    width: 292px;
+    height: 632px;
+    margin: auto;
+    padding: 24px;
+    border-left: 1px solid rgb(179,179,179);
+    /*box-shadow: 0px 0px 10px #eee;*/
+}
+
+@media (max-width: 600px) {
+	.form-container {
+		border-left: none;
+		border-top: solid 1px rgb(200,200,200);
+		height: auto;
+	}
+}
+
+.logo-container {
+	position: relative;
+	height: 48px;
+	width: auto;
+	align-content: center;
+	border-bottom: solid 1px rgb(179,179,179);
+}
+
+.logo {
+	position: absolute;
+	top: 0;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+	width: 130px;
+	align-self: center;
+}
+
+.form {
+	position: relative;
+	height: 590px;
+}
+
+@media (max-width: 600px) {
+	.form {
+		height: auto;
+	}
+}
+
+.post-login {
+	position: relative;
+	height: 590px;
+}
+
+@media (max-width: 600px) {
+	.post-login {
+		height: auto;
+	}
+}
+
+.sign-in {
+	font-family: Roboto, Arial;
+	font-size: 24px;
+	margin-top: 12px;
+	margin-bottom: 12px;
+	font-weight: 400;
+}
+
+.form input {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    /*border-radius: 5px;*/
+}
+
+input.invalid {
+    color: red;      /* Changes text color to red */
+    border: 1px solid red; /* Adds a red border to the input */
+}
+
+select.invalid {
+    color: red;      /* Changes text color to red */
+    border: 1px solid red; /* Adds a red border to the input */   
+}
+
+.forgot-password {
+    font-family: Roboto, Arial;
+    display: block;
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #007bff;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+.signin-button {
+	width: 100%;
+	border-radius: 18px;
+    padding: 10px;
+    border: none;
+    background-color: rgb(243,189,49);
+     box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.5);
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.signin-button:hover {
+	opacity: 0.7;
+}
+
+.payment-button {
+	display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.secure-payment-img {
+	height: 24px;
+	margin-right: 10px;
+}
+
+.terms-privacy {
+	margin-top: 8px;
+	font-family: Roboto, Arial;
+	font-size: 12px;
+	line-height: 1.6;
+}
+
+.tc-link {
+	color: #007bff;
+    text-decoration: none;
+}
+
+.tc-link:hover {
+    text-decoration: underline;
+}
+
+
+.new-users {
+	display: flex;
+	flex-direction: row;
+	margin-bottom: 0;
+	margin-top: 100px;
+}
+
+@media (max-width: 600px) {
+	.new-users {
+		margin-top: 24px;
+	}
+}
+
+.h-line2 {
+	width: 100%;
+	border-bottom: solid 1px rgb(179,179,179);
+	margin-bottom: 19px;
+}
+
+.new-to-findlight {
+	display: block;
+	font-family: Roboto, Arial;
+	font-size: 13px;
+	font-weight: 600px;
+	color: rgb(140,140,140);
+	width: auto;
+	margin-left: 11px;
+	margin-right: 8px;
+	align-content: center;
+	white-space: nowrap;
+}
+
+.register-button {
+	width: 100%;
+	border-radius: 18px;
+    padding: 10px;
+    border: none;
+    background-color: rgb(210,210,210);
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.5);
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.progress-indicator {
+	position: relative;
+	margin-top: 100px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 70%;
+	height: 55px;
+	display: flex;
+	flex-direction: column;
+}
+
+@media (max-width: 600px) {
+	.progress-indicator {
+		margin-top: 32px;
+	}
+}
+
+.progress-container {
+	position: relative;
+	padding-bottom: 2px;
+	margin-left: auto;
+	margin-right: auto;
+	
+}
+
+.progress-image {
+	width: 80%;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+.progress-tag-container {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	text-align: center;
+}
+
+.progress-tags {
+	font-family: Roboto, Arial;
+	font-size: 14px;
+	font-weight: 400;
+	margin-bottom: 8px;
+}
+
+.form-select {
+    width: 100%;
+    padding: 10px 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    /*border-radius: 5px;*/
+}
+
+.backto-login {
+	border: 1px solid rgb(179, 179, 179);
+	font-family: Roboto, Arial;
+	font-size: 14px;
+	margin-top: 12px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	text-align: center;
+}
+
+.welcome-header {
+	font-family: Roboto, Arial;
+	font-size: 24px;
+	font-weight: 600;
+	line-height: 1.4;
+	margin-top: 12px;
+	padding-top: 8px;
+}
+
+.step2-text {
+	font-family: Roboto, Arial;
+	font-size: 18px;
+	line-height: 1.4;
+	margin-top: 12px;
+	padding-top: 8px;
+}
+
+.square-explanation {
+	font-family: Roboto, Arial;
+	font-size: 12px;
+	line-height: 1.4;
+	margin-top: 16px;
+	color: rgb(140,140,140);
+}
+
+.credit-card-image {
+	width: 100%;
+	margin-top: 32px;
+	margin-bottom: 12px;
+}

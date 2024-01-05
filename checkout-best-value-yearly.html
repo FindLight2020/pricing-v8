@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>FindLight Best Value (Monthly)</title>
+	<link rel="stylesheet" type="text/css" href="styles/checkout.css">
+	<link rel="stylesheet" type="text/css" href="styles/general.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+	<div class="passport">
+		<div class="plan-selection">
+			<div class="plan-selected-mobile">= Plan Selected =</div>
+			<div class="plan-choice">
+				<p class="plan-name">Best Value</p>
+				<p class="plan-price">$225/mo, billed at $2700/yr</p>
+			</div>
+			<a class="see-details" href="#" id="toggleDetails">See Details &#9660;</a>		
+			<div id="details" class="plan-items">
+				<p class="regular-15 tooltip">
+					<strong>Unlimited</strong> product listings
+					<span class="tooltiptext">List unlimited products yourself</span>
+				</p>
+				<p class="regular-15 tooltip">
+					Listing Concierge (<strong>75 products</strong>)
+					<span class="tooltiptext">Delegate listing of 75 products to FindLight's professional content managers</span>
+				</p>
+				<p class="regular-15 tooltip">
+					SEO optimized listings
+					<span class="tooltiptext">Boost sales with SEO-optimized product pages delivered to you by FindLight</span>
+				</p>
+				<p class="regular-15 tooltip">
+					Unlimited sales leads
+					<span class="tooltiptext">FindLight does not cap the number of leads. Post more products and enjoy unlimited leads from all over the world</span>
+				</p>
+				<p class="regular-15 tooltip">
+					Turbo leads privacy
+					<span class="tooltiptext">Premium vendors' leads are private, i.e., buyer's request for quote is not shared with competitors for bidding</span>
+				</p>
+				<p class="regular-15 tooltip">
+					Custom lead forms
+					<span class="tooltiptext">Premium vendors have the option to customize the RFQ form to require more/less contact details from buyers</span>
+				</p>
+				<p class="regular-15 tooltip">
+					Banner ads (<strong>2 products</strong>)
+					<span class="tooltiptext">Get noticed with prime placement on FindLight's homepage banners, attracting more potential buyers with rotating product showcases and vendor exposure</span>
+				</p>
+				<p class="regular-15 tooltip">
+					Premium placement (<strong>2 products</strong>)
+					<span class="tooltiptext">Stand out with premium product placement at the top of your category for maximum visibility, with only two listings featured at any given time from a select pool of sponsored products</span>
+				</p>
+				<p class="regular-15 tooltip">
+					Analytics dashboard
+					<span class="tooltiptext">Comprehensive online marketing analytics, covering clicks, premium placement impact, product popularity, traffic by location and channel, and sales leads</span>
+				</p>
+				<p class="regular-15 tooltip">
+					Backlinks
+					<span class="tooltiptext">Each product posting will have a backlink to the vendor's webpage or the storefront placed under the title of the product posting</span>
+				</p>
+				<p class="regular-15 tooltip">
+					Storefront (<strong>fully managed</strong>)
+					<span class="tooltiptext">A fully managed dedicated space with your logo, tagline, company info, and a grid display of all your products on FindLight</span>
+				</p>
+				<p class="regular-15 tooltip">
+					Auto listing renewal (<strong>10 products</strong>)
+					<span class="tooltiptext">Ensure product visibility with manual or automated repositioning options available in our 'Best Value' and 'Enhanced' subscriptions (fully managed by FindLight)</span>
+				</p>
+				<a class="hide-details" href="#" id="hideDetails">Hide Details &#9650;</a>
+			</div>
+
+			<div class="plan-selected">
+				<div class="h-line"></div>
+				<p class="plan-selected-text">Plan Selected</p>
+				<div class="h-line"></div>
+			</div>
+		</div>
+		<div class="form-container">
+			<div class="logo-container">
+				<img class="logo" src="icons/findlight-logo.png">
+			</div>
+
+			
+			<form id="loginForm" class="form">
+					<H2 class="sign-in">Sign in</H2>
+					<input type="email" id="loginEmail" placeholder="Email *" required>
+					<input type="password" id="loginPassword" placeholder="Password *" required>
+					<a href="https://www.findlight.net/forgot-password" class="forgot-password" target="_blank">Forgot Password?</a>
+					<button type="button" class="signin-button" onclick="mockLogin()">Sign in</button>
+					<div class="terms-privacy">By continuing, you agree to FindLight’s <a class="tc-link" href="https://www.findlight.net/terms-of-service" target="_blank">Terms of Service</a> and <a class="tc-link" href="https://www.findlight.net/privacy-policy" target="_blank">Privacy Policy</a>.</div>
+					<div class="new-users">
+						<div class="h-line2"></div>
+						<p class="new-to-findlight">New to FindLight?</p>
+						<div class="h-line2"></div>
+					</div>
+					<button id="registerBtn" class="register-button">Create Vendor Account</button>
+					<div class="progress-indicator">
+						<div class="progress-container">
+							<img class="progress-image" src="icons/progress-icon-1.svg">
+						</div>
+						<div class="progress-tag-container">
+							<div class="progress-tags">Plan</div>
+							<div  class="progress-tags">Login</div>
+							<div  class="progress-tags">Pay</div>
+						</div>
+					</div>
+			</form>
+
+			<div id="postLogin" class="post-login" style="display:none;">
+				<h2 class="welcome-header">Welcome, <span id="userName">John</span>!</h2>
+				<p class="step2-text">You've successfully logged in.</p>
+				<p class="step2-text">You're just one step away! Complete your payment to start enjoying the premium services.</p>
+				<img class="credit-card-image" src="pictures/credit-card-icons.png">
+				<button class="payment-button signin-button" onclick="proceedToPayment()">
+					<img class="secure-payment-img" src="icons/secure-payment-icon.svg" alt="Icon Description">
+					Proceed to Payment
+				</button>
+				<div class="square-explanation">You will be redirected to Square, our secure payment platform, to complete your payment</div>
+				<div class="progress-indicator">
+					<div class="progress-container">
+						<img class="progress-image" src="icons/progress-icon-2.svg">
+					</div>
+					<div class="progress-tag-container">
+						<div class="progress-tags">Plan</div>
+						<div  class="progress-tags">Login</div>
+						<div  class="progress-tags">Pay</div>
+					</div>
+				</div>
+            </div>
+			
+            <div id="registerForm" class="form" style="display:none;">
+				<H2 class="sign-in">Create Account</H2>
+				<input type="text" id="fullName" placeholder="Full Name *" required>
+				<input type="email" id="registerEmail" placeholder="Email *" required>
+				<input type="password" id="registerPassword" placeholder="Password (8 charachers minimum)" minlength="8" required>
+				<div id="passwordError" style="color: red; font-size: 12px; display: none; margin-bottom: 10px;">Password must be at least 8 characters long.</div>
+				<input type="password" id="confirmPassword" placeholder="Confirm Password *" required>
+				<div id="confirmPasswordError" style="color: red; font-size: 12px; display: none; margin-bottom: 10px;">Passwords do not match.</div>
+				<input type="text" id="company" placeholder="Company *" required>
+				<input type="text" id="website" placeholder="Website *" pattern="(?:https?:\/\/)?(?:www\.)?[a-zA-Z0-9\.\/]+" title="Please enter a valid URL" required>
+				<!-- Country Dropdown -->
+				<select id="countrySelect" class="form-select" required>
+					<option value="" disabled selected>Select Country *</option>
+					<option value="USA">United States of America</option>
+					<option value="CAN">Canada</option>
+					<!-- ... other countries ... -->
+				</select>
+				<button class="signin-button" onclick="mockRegister()">Register</button>
+				<div class="terms-privacy">By continuing, you agree to FindLight’s <a class="tc-link" href="https://www.findlight.net/terms-of-service" target="_blank">Terms of Service</a> and <a class="tc-link" href="https://www.findlight.net/privacy-policy" target="_blank">Privacy Policy</a>.</div>
+				<div class="backto-login">Already have an account? <strong><a class="tc-link" href="?">Log in.</a></strong></div>
+
+				<div class="progress-indicator">
+					<div class="progress-container">
+						<img class="progress-image" src="icons/progress-icon-1.svg">
+					</div>
+					<div class="progress-tag-container">
+						<div class="progress-tags">Plan</div>
+						<div  class="progress-tags">Login</div>
+						<div  class="progress-tags">Pay</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	
+	<footer class="checkout-footer">
+		<div class="footer-text"><a class="tc-link" href="https://www.findlight.net/terms-of-service" target="_blank">Terms of Use</a> | <a class="tc-link" href="https://www.findlight.net/privacy-policy" target="_blank">Privacy Policy</a></div>
+		<div class="footer-text">Copyright © <span id="currentYear"></span> FindLight</div>
+	</footer>
+
+
+	<script src="scripts/checkoutScript.js"></script>
+</body>
+</html>

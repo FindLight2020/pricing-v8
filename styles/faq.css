@@ -1,0 +1,180 @@
+.faq-section {
+	/*height: 2000px;
+	display: flex;
+	flex-direction: column;
+	top: 0;
+	left: 0;
+	right: 0;*/
+
+	position: relative;
+	align-items: center;
+	background-color: rgb(247,249,252);
+	
+}
+
+.faq-content {
+	max-width: 1230px;
+	padding-top: 8px;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+	/*justify-content: center;*/
+}
+
+@media (min-width: 601px) and (max-width: 1278px) {
+	.faq-content {
+		left: 0;
+		right: 0;
+		margin-left: 24px;
+		margin-right: 24px;
+	}
+}
+
+@media (max-width: 600px) {
+	.faq-content {
+		left: 0;
+		right: 0;
+		margin-left: 16px;
+		margin-right: 16px;
+	}
+}
+
+.faq-top {
+	position: static;
+	height: 54px;
+}
+
+@media (max-width: 600px) {
+	.faq-top {
+		height: 40px;
+	}
+}
+
+
+.faq-layout {
+	width: 1230px; 
+  	margin: auto; 
+} 
+
+@media (max-width: 1278px) {
+	.faq-layout {
+		width: 100%;
+	}
+}
+
+.accordion { 
+	padding: 8px; 
+	margin-top: 10px; 
+	margin-bottom: 10px; 
+	background: white;
+	border: solid 1px #B1B1B1;
+} 
+
+.accordion-question p { 
+	margin: 5px; 
+	padding: 0; 
+	font-family: Roboto, Arial; 
+	font-size: 17px; 
+	font-weight: bold;
+} 
+.accordion-answer p { 
+	margin: 5px; 
+	padding: 0; 
+	padding-top: 6px;
+	font-family: Roboto, Arial; 
+	font-size: 17px; 
+} 
+
+.accordion:hover { 
+	cursor: pointer; 
+} 
+
+.accordion-answer { 
+	display: none; 
+} 
+
+.accordion.active .accordion-answer { 
+	display: block; 
+}
+
+li {
+	font-family: Roboto, Arial; 
+	font-size: 17px; 
+	padding-top: 2px;
+	padding-bottom: 2px;
+	margin-left: 0;
+	padding-left: 0;
+}
+
+.media-kit-faq {
+	margin: 0;
+	text-decoration: none;
+	text-align: right;
+	cursor: pointer;
+}
+
+.media-kit-faq:hover {
+	color: rgb(243,165,49);
+}
+
+@media (max-width: 700px) {
+	.media-kit-faq {
+		display: none;
+	}
+}
+
+.contact-us {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
+
+@media (max-width: 700px) {
+	.contact-us {
+		margin-top: 16px;
+	}
+}
+
+@media (max-width: 400px) {
+	.contact-us {
+		justify-content: space-between;
+	}
+}
+
+.more-question {
+	font-family: Roboto, Arial; 
+	font-size: 17px; 
+	font-weight: bold;
+	margin-bottom: 20px;
+	padding-bottom: 12px;	
+
+}
+
+.contactus-button {
+	width: 160px;
+	height: 36px;
+	border-radius: 18px;
+	border: none;
+	background-color: rgb(4,92,153);
+	font-family: Roboto, Arial;
+	font-size: 15px;
+	color: white;
+	font-weight: bold;
+	cursor: pointer;
+	margin-left: 50px;
+	margin-bottom: 32px;
+}
+
+.contactus-button:hover {
+	opacity: 0.7;
+}
+
+@media (max-width: 500px) {
+	.contactus-button {
+		width: 140px;
+		margin-left: 16px;
+	}
+}

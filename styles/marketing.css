@@ -1,0 +1,321 @@
+.marketing-section {
+	/*height: 3000px;
+	
+	display: flex;
+	flex-direction: column;
+	top: 0;
+	left: 0;
+	right: 0;*/
+	background-color: rgb(247,249,252);
+	position: relative;
+	align-items: center;
+}
+
+.marketing-content {
+	max-width: 1230px;
+	padding-top: 8px;
+	padding-bottom: 16px;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+@media (min-width: 601px) and (max-width: 1278px) {
+	.marketing-content {
+		left: 0;
+		right: 0;
+		margin-left: 24px;
+		margin-right: 24px;
+	}
+}
+
+@media (max-width: 600px) {
+	.marketing-content {
+		left: 0;
+		right: 0;
+		margin-left: 16px;
+		margin-right: 16px;
+	}
+}
+
+.marketing-top {
+	position: static;
+	margin-bottom: 32px;
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+	.marketing-top {
+		margin-bottom: 24px;
+	}
+}
+
+@media (max-width: 600px) {
+	.marketing-top {
+		margin-bottom: 8px;
+	}
+}
+
+.marketing-service {
+	/*border: solid 1px;*/
+	display: grid;
+	grid-template-columns: 317px 1fr;
+	background-color: white;
+	box-shadow: 0 2px 2px 2px rgba(0,0,0,0.15);
+	margin-bottom: 32px;
+}
+
+@media (max-width: 750px) {
+	.marketing-service {
+		display: grid;
+		grid-template-columns: 1fr; 
+		margin-top: 8px;
+	}
+}
+
+.marketing-image-container {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	width: 317px;
+	/*height: 506px;*/
+}
+
+@media (max-width: 750px) {
+	.marketing-image-container {
+		width: 100%;
+	}
+}
+
+
+@media (max-width: 750px) {
+	.socmedpic-container-mob {
+		height: 530px;
+		/*border: solid red 1px;*/
+		overflow: hidden;
+	}
+}
+
+@media (max-width: 750px) {
+	.promotedcontentpic-container-mob {
+		height: 480px;
+		/*border: solid red 1px;*/
+		overflow: hidden;
+	}
+}
+
+@media (max-width: 750px) {
+	.pressreleasepic-container-mob {
+		max-height: 1150px;
+		/*border: solid red 1px;*/
+		overflow: hidden;
+	}
+}
+
+.white-paper-photo {
+	display: flex;
+	flex: column;
+	height: 100%;
+	max-width: 317px;
+	object-fit: cover;
+}
+
+@media (max-width: 750px) {
+	.white-paper-photo {
+		/*border: solid red 1px;*/
+		max-height: 500px;
+		max-width: 100%;	
+	}
+}
+
+@media (min-width: 751px) and (max-width: 1200px) {
+	.socmedpic {
+		/*width: 100%;*/
+		height: 100%;
+		/*max-height: none;*/
+
+	}
+}
+
+@media (max-width: 750px) {
+	.socmedpic {
+		width: 100%;
+		height: 1300px;
+		max-height: none;
+
+	}
+}
+
+@media (min-width: 751px) and (max-width: 1250px) {
+	.promotedcontentpic {
+		height: 100%;
+
+	}
+}
+
+@media (max-width: 750px) {
+	.promotedcontentpic {
+		height: 550px;
+		max-height: none;
+
+	}
+}
+
+@media (min-width: 751px) and (max-width: 950px)  {
+	.pressreleasepic {
+		width: 100%;
+		max-height: none;
+
+	}
+}
+@media (max-width: 750px) {
+	.pressreleasepic {
+		max-height: none;
+	}
+}
+
+.image-tag-1 {
+	display: flex;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom:	130px;
+	justify-content: center;
+}
+
+@media (max-width: 750px) {
+	.image-tag-1 {
+		bottom:	120px;
+	}
+}
+
+.image-tag-2 {
+	display: flex;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom:	120px;
+	justify-content: center;
+}
+
+@media (max-width: 750px) {
+	.image-tag-2 {
+		bottom: 105px;
+	}
+}
+
+.image-tag-3	{
+	display: flex;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 30px;
+	justify-content: center;
+}
+
+@media (max-width: 750px) {
+	.h1w-mob{
+		font-size: 30px;
+		font-weight: 500;
+	}
+}
+
+
+.marketing-service-content {
+	padding-left: 46px;
+	padding-right: 46px;
+	display: flex;
+	flex-direction: column;
+	/*border: solid 1px red;*/
+}
+
+@media (min-width: 750px) and (max-width: 1100px) {
+	.marketing-service-content {
+		padding-left: 24px;
+		padding-right: 24px;
+	}
+}
+
+@media (max-width: 749px) {
+	.marketing-service-content {
+		padding-left: 8px;
+		padding-right: 8px;
+	}
+}
+
+@media (min-width: 750px) and (max-width: 1100px) {
+	.marketing-service-title {
+		margin-bottom: 16px;	
+	}
+}
+
+@media (max-width: 749px) {
+	.marketing-service-title {
+		margin-bottom: 16px;	
+	}
+}
+
+.marketing-service-points {
+	display: grid;
+	grid-template-columns: 180px 1fr;
+	margin-bottom: 10px;
+}
+
+@media (min-width: 750px) and (max-width: 1000px) {
+	.marketing-service-points {
+		grid-template-columns: 1fr;
+	}
+}
+
+@media (max-width: 749px) {
+	.marketing-service-points {
+		grid-template-columns: 1fr;
+	}
+}
+
+.pricing-line {
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	justify-content: space-between;
+}
+
+@media (max-width: 750px) {
+	.pricing-line {
+		grid-template-columns: 1fr;
+	}
+}
+
+.marketing-order-button {
+	width: 160px;
+	height: 36px;
+	border-radius: 18px;
+	border: none;
+	background-color: rgb(4,92,153);
+	font-family: Roboto, Arial;
+	font-size: 15px;
+	color: white;
+	font-weight: bold;
+	cursor: pointer;
+	margin-left: 50px;
+	margin-bottom: 20px;
+}
+
+.marketing-order-button:hover {
+	opacity: 0.7;
+}
+
+@media (min-width: 750px) and (max-width: 1000px) {
+	.marketing-order-button {
+		margin-left: 12px;
+		margin-top: 0;
+		margin-bottom: 12px;
+	}
+}
+
+@media (max-width: 749px) {
+	.marketing-order-button {
+		margin-left: 0;
+		margin-top: 12px;
+		margin-bottom: 8px;
+	}
+}

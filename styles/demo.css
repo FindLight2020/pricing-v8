@@ -1,0 +1,75 @@
+.demo-section {
+	/*height: 3000px;
+	background-color: lightpink;
+	display: flex;
+	flex-direction: column;
+	top: 0;
+	left: 0;
+	right: 0;*/
+	position: relative;
+	align-items: center;
+
+}
+
+.demo-content {
+	max-width: 1230px;
+	padding-top: 8px;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+@media (min-width: 601px) and (max-width: 1278px) {
+	.demo-content {
+		left: 0;
+		right: 0;
+		margin-left: 24px;
+		margin-right: 24px;
+	}
+}
+
+@media (max-width: 600px) {
+	.demo-content {
+		left: 0;
+		right: 0;
+		margin-left: 16px;
+		margin-right: 16px;
+	}
+}
+
+.calendly-inline-widget {
+	max-width: auto;
+	height: 870px;
+	border: none;
+	left: 0;
+	right: 0;
+	min-width: 320px;
+	height: 1000px;
+}
+
+@media (min-width: 601px) and (max-width: 1278px) {
+	.calendly-inline-widget {
+		padding-left: 24px;
+		padding-right: 24px;
+	}
+}
+
+@media (max-width: 600px) {
+	.calendly-inline-widget {
+		padding-left: 16px;
+		padding-right: 16px;
+	}
+}
+
+/*
+.demo-top {
+	position: static;
+	height: 120px;
+}
+
+@media (max-width: 700px) {
+	.demo-top {
+		height: auto;
+	}
+}*/

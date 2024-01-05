@@ -1,0 +1,487 @@
+.statistics-section {
+	/*height: 3000px;
+	background-color: lightpink;
+	display: flex;
+	flex-direction: column;
+	top: 0;
+	left: 0;
+	right: 0;*/
+	position: relative;
+	align-items: center;
+}
+
+.statistics-content {
+	max-width: 1230px;
+	padding-top: 8px;
+	padding-bottom: 16px;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+	/*background-color: lightblue;*/
+}
+
+@media (min-width: 601px) and (max-width: 1278px) {
+	.statistics-content {
+		left: 0;
+		right: 0;
+		margin-left: 24px;
+		margin-right: 24px;
+	}
+}
+
+@media (max-width: 600px) {
+	.statistics-content {
+		left: 0;
+		right: 0;
+		margin-left: 16px;
+		margin-right: 16px;
+	}
+}
+
+.statistics-top {
+	position: static;
+	margin-bottom: 32px;
+}
+
+@media (max-width: 600px) {
+	.statistics-top {
+		margin-bottom: 8px;
+	}
+}
+
+.statistics-bottom {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+}
+
+/*@media (max-width: 600px) {
+	.statistics-bottom {
+		display: grid;
+		grid-template-columns: 1fr; 
+	}
+}*/
+
+.stats {
+	display: grid;
+	grid-template-columns: 1fr 26px 1fr 26px 1fr 26px 1fr 26px 1fr;
+	margin-bottom: 24px;
+
+}
+
+@media (min-width: 601px) and (max-width: 700px) {
+	.stats {
+		display: grid;
+		grid-template-columns: 1fr 16px 1fr 16px 1fr 16px 1fr 16px 1fr;
+		margin-bottom: 24px;
+
+	}
+}
+	
+
+@media (max-width: 600px) {
+	.stats {
+		grid-template-columns: 100%;
+		margin-bottom: 16px;
+	}
+}
+
+.stat-elements {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	/*border-bottom: solid 2px rgb(4,92,153);*/
+
+}
+
+@media (max-width: 600px) {
+	.stat-elements {
+		display: grid;
+		grid-template-columns: 130px 1fr;
+		height: 120px;
+		border-bottom: solid 2px rgb(4,92,153);
+	}
+}
+
+.vl {
+	display: flex;
+	flex-direction: row;
+	border-left: 2px solid rgb(4,92,153);
+  	height: 210px;
+  	margin-left: 13px;
+}
+
+@media (min-width: 851px) and (max-width: 1050px) {
+	.vl {
+		height: 200px;
+	}
+}
+
+@media (min-width: 701px) and (max-width: 850px) {
+	.vl {
+		height: 170px;
+	}
+}
+
+@media (min-width: 601px) and (max-width: 700px) {
+	.vl {
+		margin-left: 8px;
+		height: 160px;
+	}
+}
+
+@media (max-width: 600px) {
+	.vl {
+		display: none;
+	}
+}
+
+.stat-figures {
+	display: flex;
+	flex-direction: column;
+	top: 0;
+	font-family: Roboto, Arial;
+	font-size: 48px;
+	color: rgb(4,92,153);
+	margin-top: 40px;
+	margin-bottom: 0;
+}
+
+@media (min-width: 851px) and (max-width: 1050px) {
+	.stat-figures {
+		font-size: 42px;
+		margin-top: 38px;
+	}
+}
+
+@media (min-width: 701px) and (max-width: 850px) {
+	.stat-figures {
+		font-size: 36px;
+		margin-top: 32px;
+	}
+}
+
+@media (min-width: 601px) and (max-width: 700px) {
+	.stat-figures {
+		font-size: 32px;
+		margin-top: 30px;
+	}
+}
+
+@media (max-width: 600px) {
+	.stat-figures {
+		display: inline-block;
+		align-items: center;
+		margin-top: 0;
+		font-size: 40px;
+	}
+}
+
+.stat-figure-name {
+	display: inline-block;
+	max-width: 150px;
+	font-family: Roboto, Arial;
+	font-size: 24px;
+	margin-top: 12px
+	margin-bottom: 48px;
+	text-align: center;
+}
+
+@media (min-width: 851px) and (max-width: 1100px) {
+	.stat-figure-name {
+		font-size: 22px;
+		
+	}
+}
+
+@media (min-width: 701px) and (max-width: 850px) {
+	.stat-figure-name {
+		font-size: 18px;
+		padding-left: 3px;
+		padding-right: 3px;
+	}
+}
+
+@media (min-width: 601px) and (max-width: 700px) {
+	.stat-figure-name {
+		font-size: 16px;
+		padding-left: 3px;
+		padding-right: 3px;
+	}
+}
+
+@media (max-width: 600px) {
+	.stat-figure-name {
+		font-size: 22px;
+		max-width: none;
+		text-align: left;
+	}
+}
+
+.geo-summary {
+	display: grid;
+	grid-template-columns: 234px 0.75fr 1fr;
+	margin-top: 48px;
+	margin-bottom: 48px;
+	/*align-items: center;*/
+}
+
+@media (min-width: 601px) and (max-width: 999px) {
+	.geo-summary {
+		grid-template-columns: 234px 1fr;
+		margin-top: 32px;
+		margin-bottom: 32px;
+	}
+}
+
+@media (min-width: 450px) and (max-width: 600px) {
+	.geo-summary {
+		grid-template-columns: 160px 1fr;
+		margin-top: 24px;
+		margin-bottom: 32px;
+	}
+}
+
+@media (min-width: 360px) and (max-width: 449px) {
+	.geo-summary {
+		grid-template-columns: 120px 1fr;
+		margin-top: 16px;
+		margin-bottom: 24px;
+	}
+}
+
+
+@media (max-width: 359px) {
+	.geo-summary {
+		grid-template-columns: 1fr;
+		margin-top: 16px;
+		margin-bottom: 16px;
+	}
+}
+
+@media (min-width: 450px) and (max-width: 600px) {
+	.H2-Small {
+		font-size: 16px;
+		font-weight: 500;
+		margin-bottom: 8px;
+	}
+}
+
+@media (max-width: 449px) {
+	.H2-Small {
+		font-size: 14px;
+		font-weight: 500;
+		margin-bottom: 6px;
+	}
+}
+
+.geo-chart-container {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+		/*width: 234px;*/
+}
+
+.geo-chart {
+	display: flex;
+	flex: column;
+	width: 100%;
+	object-fit: cover;
+}
+
+@media (max-width: 369px) {
+	.geo-chart {
+		max-width: 180px;
+	}
+
+}
+
+.geo-legends {
+	display: flex;	
+	flex-direction: column;
+	max-height: 180px;
+	margin-left: 40px;
+	margin-right: 40px;
+	justify-content: space-between;
+	padding-top: 20px;
+	padding-bottom: 20px; 
+}
+
+@media (min-width: 1000px) and (max-width: 1150px) {
+	.geo-legends {
+		margin-right: 10px;
+	}
+}
+
+@media (min-width: 650px) and (max-width: 999px) {
+	.geo-legends {
+		margin-left: 60px;
+	}
+}
+
+@media (min-width: 450px) and (max-width: 600px) {
+	.geo-legends {
+		max-height: 130px;
+		margin: 0;
+		margin-left: 32px;
+	}
+}
+
+@media (min-width: 360px) and (max-width: 449px) {
+	.geo-legends {
+		max-height: 120px;
+		margin: 0;
+		margin-left: 16px;
+		padding-top: 8px;
+		padding-bottom: 8px; 
+	}
+}
+
+@media (max-width: 359px) {
+	.geo-legends {
+		height: 120px;
+		margin: 0;
+		margin-left: 0;
+		padding-top: 24px;
+		padding-bottom: 8px; 
+	}
+}
+
+.legend-square-red {
+	height: 18px;
+	width: 18px;
+	background-color: #CC3919;
+	margin-right: 15px;
+}
+
+.legend-square-yellow {
+	height: 18px;
+	width: 18px;
+	background-color: #F4A051;
+	margin-right: 15px;
+}
+
+.legend-square-blue {
+	height: 18px;
+	width: 18px;
+	background-color: #0071BD;
+	margin-right: 15px;
+}
+
+.legend-square-green {
+	height: 18px;
+	width: 18px;
+	background-color: #49B868;
+	margin-right: 15px;
+}
+
+
+@media (max-width: 600px) {
+	.legend-square-red, 
+	.legend-square-yellow,
+	.legend-square-blue,
+	.legend-square-green {
+		height: 13px;
+		width: 13px;
+		margin-right: 10px;
+	}
+
+}
+
+.legend-text {
+	display: grid;
+	grid-template-columns: 32px 170px 1fr
+}
+
+@media (max-width: 600px) {
+	.legend-text {
+		grid-template-columns: 24px 137px 1fr;	
+	}
+}
+
+.country-text {
+	width: 170px;
+	margin-right: 8px;
+	font-family: Roboto, Arial;
+	font-size: 15px;
+}
+
+.country-text-value {
+	/*min-width: 90px;*/
+	margin-right: 8px;
+	font-family: Roboto, Arial;
+	font-size: 15px;
+}
+
+@media (max-width: 600px) {
+	.country-text {	
+		width: auto;
+		margin-right: 0;	
+		font-size: 12px;
+	}
+}
+
+
+@media (max-width: 600px) {
+	.country-text-value {	
+		font-size: 12px;
+	}
+}
+
+.stat-summary {
+	background-image: linear-gradient(to right, rgb(4,92,153), white);
+	height: 180px;
+	padding-top: 8px;
+	padding-bottom: 20px;
+	margin-bottom: 10px;
+	margin-left: 24px;
+}
+
+@media (min-width: 1000px) and (max-width: 1150px) {
+	.stat-summary {
+		padding-top: 24px;
+		padding-bottom: 4px;
+	}
+}
+
+@media (max-width: 999px) {
+	.stat-summary {
+		display: none;
+	}
+}
+
+.stat-summary-text {
+	font-family: Roboto, Arial;
+	font-size: 24px;
+	color: white;
+	margin-bottom: 8px;
+	margin-left: 34px;
+	font-weight: 500;
+}	
+
+@media (min-width: 1000px) and (max-width: 1150px) {
+	.stat-summary-text {
+		font-size: 20px;	
+		margin-left: 24px;
+		margin-bottom: 4px;
+	}
+}
+
+.media-kit-stat {
+	margin: 0;
+	text-decoration: none;
+	text-align: right;
+	cursor: pointer;
+}
+
+.media-kit-stat:hover {
+	color: rgb(243,165,49);
+}
+
+
+@media (max-width: 999px) {
+	.media-kit-stat {
+		display: none;
+	}
+}
